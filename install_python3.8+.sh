@@ -6,13 +6,13 @@ install-pkg build-essential zlib1g-dev \
 python_version="3.9.5"
 
 # Grab the latest version of Python
-wget https://www.python.org/ftp/python/${python_version}/Python-${python_version}.tar.xz
-tar -xf Python-${python_version}.tar.xz
+wget https://www.python.org/ftp/python/$python_version/Python-$python_version.tar.xz
+tar -xf Python-$python_version.tar.xz
 
 # Configure Python
 DIR=$(pwd)
 
-cd Python-${python_version}
+cd Python-$python_version
 ./configure --enable-optimizations --prefix=${DIR}/python
 
 # Install
@@ -20,5 +20,5 @@ make install
 
 # Clean up
 cd ~/$REPL_SLUG
-rm Python-${python_version}.tar.xz
-rm -rf Python-${python_version}
+rm Python-$python_version.tar.xz
+rm -rf Python-$python_version
