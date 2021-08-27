@@ -1,2 +1,0 @@
-run = "python lrb.py"
-onBoot = "chmod 777 set_up_env.sh && ./set_up_env.sh && source .bot-env/bin/activate"
